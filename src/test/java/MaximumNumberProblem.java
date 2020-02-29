@@ -47,4 +47,19 @@ public class MaximumNumberProblem {
         float maximum = max.greaterNumberFloat((float) 14.2, (float) 3.2, (float) 22.3);
         Assert.assertEquals(22.3, maximum, 1);
     }
+    @Test
+    public void given_max_string_at_first_position_should_return_same() {
+        String maximum = max.MaximumString("Peach","Apple","Banana");
+        Assert.assertEquals("Peach", maximum);
+    }
+    @Test
+    public void given_max_string_at_second_position_should_return_same() {
+        String maximum = max.MaximumString("Apple","Peach","Banana");
+        Assert.assertEquals("Peach", maximum);
+    }
+    @Test
+    public void given_max_string_at_third_position_should_return_same() {
+        String maximum = max.MaximumString("Apple","Banana","Peach");
+        Assert.assertEquals("Peach", maximum);
+    }
 }

@@ -12,4 +12,8 @@ public class MaximumNumber {
         Float number3 = Float.valueOf(num3);
         return (number1.compareTo(number2) > 0) ? ((number1.compareTo(number3) > 0) ? num1 : num3) : ((number2.compareTo(number3) > 0) ? num2 : num3);
     }
+
+    public String MaximumString(String s1, String s2, String s3) {
+        return (s1.compareTo(s2) > 0) ? ((s1.compareTo(s3) > 0) ? s1 : s3) : ((s2.compareTo(s3) > 0) ? s2 : s3);
+    }
 }
