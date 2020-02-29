@@ -16,4 +16,8 @@ public class MaximumNumber {
     public String MaximumString(String s1, String s2, String s3) {
         return (s1.compareTo(s2) > 0) ? ((s1.compareTo(s3) > 0) ? s1 : s3) : ((s2.compareTo(s3) > 0) ? s2 : s3);
     }
+    public <E extends Comparable> E Maximum(E num1,E num2,E num3){
+        return (num1.compareTo(num2) > 0) ? ((num1.compareTo(num3) > 0) ? num1 : num3) : ((num2.compareTo(num3) > 0) ? num2 : num3);
+
+    }
 }
