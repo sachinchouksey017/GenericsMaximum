@@ -30,4 +30,21 @@ public class MaximumNumberProblem {
         Assert.assertEquals(1200, maximum);
     }
 
+    @Test
+    public void given_float_max_number_at_first_position_should_return_same() {
+        float maximum = max.greaterNumberFloat((float) 14.2, (float) 3.2, (float) 2.3);
+        Assert.assertEquals(14.2, maximum, 1);
+    }
+
+    @Test
+    public void given_max_number_float_at_second_position_should_return_same() {
+        float maximum = max.greaterNumberFloat((float) 14.2, (float) 33.2, (float) 2.3);
+        Assert.assertEquals(33.2, maximum, 1);
+    }
+
+    @Test
+    public void given_max_number_float_at_third_position_should_return_same() {
+        float maximum = max.greaterNumberFloat((float) 14.2, (float) 3.2, (float) 22.3);
+        Assert.assertEquals(22.3, maximum, 1);
+    }
 }
